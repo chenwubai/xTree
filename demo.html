@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>xTree Demo</title>
+            <script src="./bower_components/d3/d3.js"></script>
+            <script src="./js/xTree.js"></script>
+            <link rel="stylesheet" href="./css/xTree.css"/>
+            <style>
+                #container {
+                    width: 1000px;
+                    height: 400px;
+                    margin: 0 auto;
+                    border: 1px solid #000;
+                }
+            </style>
+        </head>
+    <body>
+        <div id="container"></div>
+        <script>
+            window.onload = function() {
+                var config = {
+                    // 整个树状图和svg边缘的距离
+                    margin: {
+                        top: 50,
+                        left: 50,
+                        right: 50,
+                        bottom: 50
+                    },
+                    labelStyle: {
+                        // 包裹文字标签的矩形与内容的内边距
+                        padding: 10,
+                        // 矩形的边框宽度
+                        borderWidth: 1,
+                        // 文字标签的文字大小
+                        textSize: 14
+                    },
+                    btnStyle: {
+                        // 按钮的半径
+                        radius: 10
+                    },
+                    distances: {
+                        verticalMargin: 100,
+                        lastVerticalMargin: 10,
+                        distanceToBtn: 20
+                    },
+                    data: {
+                        name: '供应链总部',
+                        children: [
+                            {
+                                name: '北京一区',
+                                children: [
+                                    {
+                                        name: '天外飞鲜（望京SOHO店）'
+                                    },
+                                    {
+                                        name: '天外飞鲜（花家地店）'
+                                    },
+                                    {
+                                        name: '天外飞鲜（华彩店）'
+                                    },
+                                    {
+                                        name: '天外飞鲜（798店）'
+                                    }
+                                ]
+                            },
+                            {
+                                name: '北京二区',
+                                children: [
+                                    {
+                                        name: '天外飞鲜（国贸店）'
+                                    },
+                                    {
+                                        name: '天外飞鲜（三里屯店）'
+                                    },
+                                    {
+                                        name: '天外飞鲜（建外SOHO店）'
+                                    }
+                                ]
+                            },
+                            {
+                                name: '北京三区'
+                            }
+                        ]
+                    }
+                }
+                var container = xTree(document.querySelector('#container'));
+                container.loadConfig(config);
+            };
+        </script>
+    </body>
+</html>

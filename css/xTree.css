@@ -1,0 +1,28 @@
+/* 节点 */
+.nodeLabelBox, .nodeBtnBox {
+    fill: #fff;
+    stroke: #000;
+}
+
+.nodeLabelBox {
+    rx: 2;
+    ry: 2;
+}
+
+.nodeBtn, .nodeLabel {
+    cursor: pointer;
+}
+
+/* 节点文本 */
+.node text {
+    fill-opacity: 0.7;
+}
+
+/* 节点连线 */
+.line {
+    fill: none;
+    stroke: #000;
+}
+.none {
+    visibility: hidden;
+}

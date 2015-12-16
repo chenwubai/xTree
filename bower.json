@@ -1,0 +1,21 @@
+{
+  "name": "xTree",
+  "authors": [
+    "陈五百 <chenwubai.cx@gmail.com>"
+  ],
+  "description": "基于D3.js的自定义树状图",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.6"
+  }
+}
