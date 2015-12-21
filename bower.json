@@ -1,21 +1,28 @@
 {
-  "name": "xTree",
-  "authors": [
-    "陈五百 <chenwubai.cx@gmail.com>"
-  ],
-  "description": "基于D3.js的自定义树状图",
-  "main": "",
-  "moduleType": [],
-  "license": "MIT",
-  "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "d3": "~3.5.6"
-  }
+    "name": "xTree",
+    "authors": [
+        "陈五百 <chenwubai.cx@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chenwubai/xTree.git"
+    },
+    "description": "a custom treemap based on d3.js",
+    "main": "",
+    "moduleType": [],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "keywords": [
+        "xTree"
+    ],
+    "dependencies": {
+        "d3": "~3.5.12"
+    }
 }
