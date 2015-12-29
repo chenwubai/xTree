@@ -3,9 +3,9 @@
         <head>
             <meta charset="UTF-8">
             <title>xTree Demo</title>
-            <script src="./bower_components/d3/d3.js"></script>
-            <script src="./js/xTree.js"></script>
-            <link rel="stylesheet" href="./css/xTree.css"/>
+            <script src="../node_modules/d3/d3.js"></script>
+            <script src="../lib/js/xTree.js"></script>
+            <link rel="stylesheet" href="../lib/css/xTree.css"/>
             <style>
                 #container {
                     width: 1000px;
@@ -44,11 +44,20 @@
                         lastVerticalMargin: 10,
                         distanceToBtn: 20
                     },
+                    allowDrag: true,
                     data: {
                         name: '供应链总部',
                         children: [
                             {
                                 name: '北京一区',
+                                children: [
+                                    {
+                                        name: '利泽西园店'
+                                    }
+                                ]
+                            },
+                            {
+                                name: '北京二区',
                                 children: [
                                     {
                                         name: '天外飞鲜（望京SOHO店）'
@@ -65,10 +74,21 @@
                                 ]
                             },
                             {
-                                name: '北京二区',
+                                name: '北京三区'
+                            },
+                            {
+                                name: '北京四区',
                                 children: [
                                     {
-                                        name: '天外飞鲜（国贸店）'
+                                        name: '天外飞鲜（国贸店）',
+                                        children: [
+                                            {
+                                                name: '陈旋'
+                                            },
+                                            {
+                                                name: '陈五百'
+                                            }
+                                        ]
                                     },
                                     {
                                         name: '天外飞鲜（三里屯店）'
@@ -79,7 +99,7 @@
                                 ]
                             },
                             {
-                                name: '北京三区'
+                                name: '北京五区'
                             }
                         ]
                     }

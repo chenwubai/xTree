@@ -1,0 +1,22 @@
+{
+  "name": "xtree",
+  "version": "0.0.1",
+  "description": "a custom treemap based on d3.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenwubai/xTree.git"
+  },
+  "author": "chenwubai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenwubai/xTree/issues"
+  },
+  "homepage": "https://github.com/chenwubai/xTree#readme",
+  "dependencies": {
+    "d3": "^3.5.12"
+  }
+}
